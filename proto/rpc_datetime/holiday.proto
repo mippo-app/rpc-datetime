@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+// パッケージ定義
+package rpc_datetime;
+
+// import
+
+import "typ_p/date.proto";
+
+message IsHolidayResponse {
+    string calendar_id = 1;
+    typ_p.Date target_date = 2;
+}
+
+message IsHolidayRequest {
+    bool r = 1;
+}
+
+
+// サービスとRPCメソッド定義
+service HolidayService {
+    rpc IsHoliday (IsHolidayRequest) returns (IsHolidayResponse);
+
+}
+
+
+

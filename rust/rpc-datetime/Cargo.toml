@@ -1,0 +1,38 @@
+[package]
+name = "rpc-datetime"
+version = "0.1.0"
+edition = "2021"
+
+build = "build.rs"
+
+[dependencies]
+err-derive = "~0"
+log = "~0"
+env_logger = "~0"
+
+chrono = "~0"
+chronoutil = "~0"
+
+tonic = {version = "~0", features = ["transport", "tls", "gzip"]}
+prost = "~0"
+prost-types = "~0"
+
+
+derive_pb = { git = "https://github.com/mippo-app/derive_pb.git", branch = "main" }
+helper = { git = "https://github.com/mippo-app/helper.git", branch = "main" }
+
+uuid = {version = "1", features = ["serde", "v4"]}
+
+regex = "1"
+envy = "~0"
+serde = {version = "1",  features = ["derive"] }
+
+gcloud-sdk = { version = "~0", features = ["google-firestore-v1"] }
+
+
+
+
+[build-dependencies]
+tonic-build = "~0"
+
+helper = { git = "https://github.com/mippo-app/helper.git", branch = "main" }
