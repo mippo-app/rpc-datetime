@@ -7,12 +7,13 @@ package rpc_datetime;
 
 import "typ_p/date.proto";
 
-message IsHolidayResponse {
+message IsHolidayRequest {
     string calendar_id = 1;
     typ_p.Date target_date = 2;
 }
 
-message IsHolidayRequest {
+
+message IsHolidayResponse {
     bool r = 1;
 }
 
