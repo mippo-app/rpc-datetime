@@ -5,7 +5,7 @@ pub struct IsHolidayRequest {
     #[prost(string, tag = "1")]
     pub calendar_id: ::prost::alloc::string::String,
     #[prost(message, optional, tag = "2")]
-    pub target_date: ::core::option::Option<super::typ_p::Date>,
+    pub target_date: ::core::option::Option<typ_p::pb::typ_p::Date>,
 }
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, Copy, PartialEq, ::prost::Message)]

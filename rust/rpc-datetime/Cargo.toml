@@ -17,7 +17,7 @@ tonic = {version = "~0", features = ["transport", "tls", "gzip"]}
 prost = "~0"
 prost-types = "~0"
 
-
+typ-p = { git = "https://github.com/mippo-app/typ-p.git", branch = "main" }
 derive_pb = { git = "https://github.com/mippo-app/derive_pb.git", branch = "main" }
 helper = { git = "https://github.com/mippo-app/helper.git", branch = "main" }
 
